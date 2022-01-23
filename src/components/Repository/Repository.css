@@ -1,0 +1,51 @@
+.repository {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: #fff;
+  width: 45%;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  transition: all 0.2s;
+}
+
+.repository:hover {
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.repo--header a {
+  color: #539bf5;
+  font-weight: bold;
+  margin: 0;
+  text-decoration: none;
+}
+.repo--header a:hover {
+  text-decoration: underline;
+}
+
+.repo--description p {
+  margin: 0;
+}
+
+.repo--description,
+.repo--footer {
+  font-size: 0.8em;
+}
+
+.repo--footer {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+i {
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  .repository {
+    width: 100%;
+  }
+}
